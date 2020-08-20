@@ -10,31 +10,29 @@
 <body><div class="body neooutside">
 
     <h1>Chapter 1</h1>
-    <hr class="lvl1">
     content
-    <hr class="end">
 
-    <h1>Chapter 2</h1>
     <hr class="lvl1">
-        <p>Syntax Hilighting</p>
+    <h1>Chapter 2</h1>
 
-        <h2>Variables</h2>
-        <p>
-            Variable Naming
-            <ul>
-                <li><strong>contain</strong> : A-Z a-z numbers _ </li>
-                <li><strong>start</strong> : A-Z a-z _ </li>
-                <li><strong>not be </strong> : specific python names (print,function,...) </li>
-            </ul>
-        </p>
-        <p>traceback</p>
+    <section class="term">Syntax Hilighting</section>
 
-        <h2>Strings</h2>
-        <p>
-            only one kind of <span class="blue">'</span> or <span class="red">"</span> as wrapper <br>
-            <span class="blue">'</span> example  <span class="red">  " </span> number1 <span class="red">  " </span> <span class="blue"> ' </span> <br>
-            <span class="red">"</span>  example  <span class="blue"> ' </span> number1 <span class="blue"> ' </span> <span class="red">  " </span> <br>
-        </p>
+    <h2>Variables</h2>
+    <section>
+        Variable Naming
+        <ul>
+            <li><strong>contain</strong> : A-Z a-z numbers _ </li>
+            <li><strong>start</strong> : A-Z a-z _ </li>
+            <li><strong>not be </strong> : specific python names (print,function,...) </li>
+        </ul>
+    </section>
+    <p>traceback</p>
+    <h2>Strings</h2>
+    <section>
+        only one kind of <span class="blue">'</span> or <span class="red">"</span> as wrapper <br>
+        <span class="blue">'</span> example  <span class="red">  " </span> number1 <span class="red">  " </span> <span class="blue"> ' </span> <br>
+        <span class="red">"</span>  example  <span class="blue"> ' </span> number1 <span class="blue"> ' </span> <span class="red">  " </span> <br>
+    </section>
         <p>
             <h3>Changing Case in a String with Methods </h3>
             <p>
@@ -49,9 +47,9 @@
         </p>
         <p>
             <h3>Using Variables in Strings </h3>
-            <p><strong>f string</strong>, f is for format</p>
-            <p>full_name = <span class="blue">f</span>"<span class="red">{</span>first_name<span class="red">}</span> <span class="red">{</span>last_name<span class="red">}</span>"</p>
-            <p>
+            <section><section class="term">f string</section>format string (f is for format)</section>
+            <section>full_name = <span class="blue">f</span>"<span class="red">{</span>first_name<span class="red">}</span> <span class="red">{</span>last_name<span class="red">}</span>"</section>
+            <section>
                 Example :
                 <code>
                     first_name = "ada"
@@ -59,17 +57,17 @@
                     full_name = f"{first_name} {last_name}"
                     print(full_name)
                 </code>
-            </p>
-            <p>
+            </section>
+            <section>
                 Example of other kind :
                 <code>
                     full_name = "{} {}".format(first_name, last_name)
                 </code>
-            </p>
+            </section>
         </p>
 
         <h3>Adding Whitespace to Strings with Tabs or Newlines</h3>
-        <p>
+        <section>
             <strong>\t</strong> is for tab <br><br>
             Example :
             <samp>
@@ -78,8 +76,8 @@
                 <span class="python_prompt">&gt;&gt;&gt;</span>print("\tPython")
                     Python
             </samp>
-        </p>
-        <p>
+        </section>
+        <section>
             <strong>\n</strong> is for new line <br><br>
             Example :
             <samp>
@@ -89,7 +87,103 @@
                 C
                 JavaScript
             </samp>
-        </p>
+        </section>
+
         <h3>Stripping Whitespace </h3>
+        <section>
+            <samp>
+                >>> favorite_language = ' python '
+                >>> favorite_language.rstrip()
+                ' python'
+                >>> favorite_language.lstrip()
+                'python '
+                favorite_language.strip()
+                'python'
+            </samp>
+        </section>
+        <h3>Avoiding Syntax Errors with Strings</h3>
+        <section class="term">syntax error</section>
+        <a href="(2-3_2-6)_Chapter1_Strings_try_it_yourself_page25.py">Try It Your Self Excersise File Page 25</a> <br><br>
+        Try It Your Self Note :
+        <samp>
+            >>> name = "\t python \n"
+            >>> print(name)
+            python
+
+            >>> print( name.lstrip() )
+            python
+
+            >>> print( name.rstrip() )
+            python
+            >>> print( name.strip() )
+            python
+        </samp>
+        <h2>Numbers</h2>
+        <h3>integer</h3>
+        <section>
+            Note : the answer of / operator is always a <strong>float</strong> number
+            <samp>
+                >>> 2 + 3
+                5
+                >>> 3 - 2
+                1
+                >>> 2 * 3
+                6
+                >>> 3 / 2
+                1.5
+                >>> 3 ** 2
+                9
+            </samp>
+        </section>
+        <h3>floats</h3>
+        <section>
+            Note : <section class="term">floating point</section>
+            <samp>
+            >>> 0.1 + 0.1
+            0.2
+            >>> 0.2 + 0.2
+            0.4
+            >>> 2 * 0.1
+            0.2
+            >>> 2 * 0.2
+            0.4
+            >>> 0.2 + 0.1
+            0.30000000000000004
+            >>> 3 * 0.1
+            0.30000000000000004
+            </samp>
+        </section>
+        <h3>integers and floats</h3>
+    <section>
+        Note : Python defaults to a float in any operation that uses a float, even if the output is a whole number.
+        <samp>
+            >>> 1 + 2.0
+            3.0
+            >>> 2 * 3.0
+            6.0
+            >>> 3.0 ** 2
+            9.0
+        </samp>
+    </section>
+    <h3>underscores in numbers </h3>
+    <section>
+        <strong>universe_age = 14_000_000_000</strong> is same as <strong>universe_age = 14000000000</strong> for python interpretor
+        <section>python omit <strong>_</strong>  in numbers</section>
+    </section>
+    <h3>multiple assignments</h3>
+    <section>
+        <samp>
+            >>> x,y,z = 0,1.1,'example'
+        </samp>
+    </section>
+    <h3>constant</h3>
+    <section>
+        <code>
+            MAX_CONNECTIONS = 5000
+        </code>
+        Note : When you want to treat a variable as a constant in your code, make the name of the variable all capital letters.
+    </section>
+
+
 </div></body>
 </html>

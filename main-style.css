@@ -1,20 +1,30 @@
+.body {
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+
 body {
     font-family: "Roboto";
-    font-size: 15px;
+    font-size: 20px;
     background: #e2e2e2;
 
 }
 
 p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+
 }
 
-.body {
-    width: 60%;
-    margin: auto;
-    padding: 220px;
+section.term::after {
+    content: " (term)";
 }
+
+section {
+    margin: 20px 0px;
+}
+
+
+
 
 code , samp {
     display: block;
@@ -59,18 +69,10 @@ span {
 }
 
 
-h1{
+h1,h2,h3,h4{
     color: #f30b0b;
 }
 
-hr.lvl1 {
-
-}
-
-hr.end {
-    height: 5px;
-    background-color: black;
-}
 
 .var_object {
     font-weight: bold;
