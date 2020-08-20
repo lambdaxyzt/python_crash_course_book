@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Crash Course book</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body><div class="body neooutside">
+
+    <h1>Chapter 1</h1>
+    <hr class="lvl1">
+    content
+    <hr class="end">
+
+    <h1>Chapter 2</h1>
+    <hr class="lvl1">
+        <p>Syntax Hilighting</p>
+
+        <h2>Variables</h2>
+        <p>
+            Variable Naming
+            <ul>
+                <li><strong>contain</strong> : A-Z a-z numbers _ </li>
+                <li><strong>start</strong> : A-Z a-z _ </li>
+                <li><strong>not be </strong> : specific python names (print,function,...) </li>
+            </ul>
+        </p>
+        <p>traceback</p>
+
+        <h2>Strings</h2>
+        <p>
+            only one kind of <span class="blue">'</span> or <span class="red">"</span> as wrapper <br>
+            <span class="blue">'</span> example  <span class="red">  " </span> number1 <span class="red">  " </span> <span class="blue"> ' </span> <br>
+            <span class="red">"</span>  example  <span class="blue"> ' </span> number1 <span class="blue"> ' </span> <span class="red">  " </span> <br>
+        </p>
+        <p>
+            <h3>Changing Case in a String with Methods </h3>
+            <p>
+                <span class="neoinside inline-block"><var class="var_object">string</var>.title( )</span> : "ada lovelace" => "Ada Lovlace" <br>
+                <span>For example, you might want your program to recognize the input values Ada, ADA, and ada as the same name, and display all of them as Ada</span>
+            </p>
+            <p>
+            <span class="neoinside inline-block"><var class="var_object">string</var>.upper( )</span> : "ada lovelace" => "ADA LOVLACE" <br>
+            <span class="neoinside inline-block"><var class="var_object">string</var>.lower( )</span> : "Ada Lovelace" => "ada lovlace" <br>
+            <span>The lower() method is particularly useful for storing data. Many times you won’t want to trust the capitalization that your users provide, so you’ll convert strings to lowercase before storing them. Then when you want to display the information, you’ll use the case that makes the most sense for each string.</span>
+            </p>
+        </p>
+        <p>
+            <h3>Using Variables in Strings </h3>
+            <p><strong>f string</strong>, f is for format</p>
+            <p>full_name = <span class="blue">f</span>"<span class="red">{</span>first_name<span class="red">}</span> <span class="red">{</span>last_name<span class="red">}</span>"</p>
+            <p>
+                Example :
+                <code>
+                    first_name = "ada"
+                    last_name = "lovelace"
+                    full_name = f"{first_name} {last_name}"
+                    print(full_name)
+                </code>
+            </p>
+            <p>
+                Example of other kind :
+                <code>
+                    full_name = "{} {}".format(first_name, last_name)
+                </code>
+            </p>
+        </p>
+
+        <h3>Adding Whitespace to Strings with Tabs or Newlines</h3>
+        <p>
+            <strong>\t</strong> is for tab <br><br>
+            Example :
+            <samp>
+                <span class="python_prompt">&gt;&gt;&gt;</span>print("Python")
+                Python
+                <span class="python_prompt">&gt;&gt;&gt;</span>print("\tPython")
+                    Python
+            </samp>
+        </p>
+        <p>
+            <strong>\n</strong> is for new line <br><br>
+            Example :
+            <samp>
+                <span class="python_prompt">&gt;&gt;&gt;</span>print("Languages:\nPython\nC\nJavaScript")
+                Languages:
+                Python
+                C
+                JavaScript
+            </samp>
+        </p>
+        <h3>Stripping Whitespace </h3>
+</div></body>
+</html>
