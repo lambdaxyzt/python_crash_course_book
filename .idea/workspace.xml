@@ -44,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Headfirst Javascript Book" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
@@ -60,6 +61,7 @@
       <workItem from="1597844735242" duration="12311000" />
       <workItem from="1597959600370" duration="2706000" />
       <workItem from="1598038622108" duration="341000" />
+      <workItem from="1598273778400" duration="46000" />
     </task>
     <servers />
   </component>
@@ -83,6 +85,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="144" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1366.728@0.0.1366.728" timestamp="1597959877509" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598273822096">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598273822096" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597959878450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

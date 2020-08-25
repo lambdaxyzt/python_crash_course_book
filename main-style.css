@@ -73,6 +73,23 @@ h1,h2,h3,h4{
     color: #f30b0b;
 }
 
+/*################*/
+.trick {
+
+}
+
+.term {
+
+}
+
+.note {
+    display: block;
+}
+
+.note::before {
+    content: "Note :";
+    color:red;
+}
 
 .var_object {
     font-weight: bold;
@@ -97,3 +114,82 @@ h1,h2,h3,h4{
     font-size:  1.1rem;
 }
 
+/* ###################### */
+.function {
+    margin: 5rem 0px;
+}
+
+.funcion--argument {
+    display: block;
+}
+
+.funcion--describtion {
+    display: block;
+}
+
+function--describtion__ {
+    display: block;
+}
+
+.object {
+    font-style: italic;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* Function Name */
+.fn {
+    padding: 0;
+    color : red;
+    font-size: 1.3rem;
+}
+
+/* Function Arguments */
+.f_arg {
+    margin:0;
+}
+
+    /* Function Arguments Optional*/
+    .f_arg--op {
+        text-transform: uppercase;
+        color : blue;
+        font-size: 1.2rem;
+    }
+    .f_arg--op::after {
+        content: " ]";
+    }
+    .f_arg--op::before {
+        content: "[ ";
+    }
+
+    /* Function Argument Required */
+    .f_arg--re {
+        text-transform: uppercase;    
+        color : blue;
+        font-size: 1.2rem;
+    }
+    .f_arg--re::after {
+        content: " }";
+    }
+    .f_arg--re::before {
+        content: "{ ";
+    }
+
+/* Function Do */
+.f_do {
+    
+}
+
+.f_do::before {
+    content: "=> ";
+}
+
+/* Function Return */
+.f_re {
+
+}
+.f_re::before {
+    content: "return ";
+    color: orange;
+}
