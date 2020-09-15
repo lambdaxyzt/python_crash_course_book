@@ -8,12 +8,36 @@ body {
     font-family: "Roboto";
     font-size: 20px;
     background: #e2e2e2;
+}
 
+/* ################ */
+
+span {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
 }
 
 p {
 
 }
+
+h1,h2,h3,h4{
+    color: #f30b0b;
+}
+
+section,div {
+    padding: 5px;
+    margin:10px 0px;
+}
+
+
+
+/* ################ */
 
 section.term::after {
     content: " (term)";
@@ -23,8 +47,7 @@ section {
     margin: 20px 0px;
 }
 
-
-
+/* ################ */
 
 code , samp {
     display: block;
@@ -42,6 +65,7 @@ samp {
     background: rgba(0, 255, 247, 0.1);
 }
 
+/* ################ */
 
 .neoinside {
     border-radius: 26px;
@@ -50,30 +74,15 @@ samp {
     inset -5px -5px 10px #ffffff;
 }
 
-.inline-block{
-    display: inline-block;
-}
-
-span {
-    display: inline-block;
-    padding:    5px;
-    margin: 2px;
-}
-
 .neooutside {
-    padding: 5px;
     border-radius: 26px;
     background: #e2e2e2;
     box-shadow:  5px 5px 10px #c0c0c0,
     -5px -5px 10px #ffffff;
 }
 
+/* ################ */
 
-h1,h2,h3,h4{
-    color: #f30b0b;
-}
-
-/*################*/
 .trick {
 
 }
@@ -96,12 +105,6 @@ h1,h2,h3,h4{
     text-transform: uppercase;
 }
 
-.python_prompt {
-
-}
-
-
-
 /*################*/
 
 .red {
@@ -115,81 +118,146 @@ h1,h2,h3,h4{
 }
 
 /* ###################### */
-.function {
-    margin: 5rem 0px;
+/* Objects and Methods */
+/* ###################### */
+
+.object_method {
+
 }
 
-.funcion--argument {
-    display: block;
-}
+    .defenition {
 
-.funcion--describtion {
-    display: block;
-}
+    }
 
-function--describtion__ {
-    display: block;
-}
+        .object {
+            font-style:italic;
+        }
 
-.object {
-    font-style: italic;
-    padding: 0;
+        .seprator {
+
+        }
+
+        .method {
+            color: red;
+            font-style:italic;
+        }
+
+        .arguments {
+
+        }
+
+        .arguments::after {
+            content: " )";
+            color:initial;
+        }
+
+        .arguments::before {
+            content: "( ";
+            color:initial;
+        }
+
+        .arguments > .argument {
+            color: blue;
+        }
+
+            [data-argument-type="required"].argument {
+                color: blue;
+            }
+
+                [data-argument-type="required"].argument::after {
+                    content: " }";
+                    color:initial;
+                    font-size: initial;
+                }
+
+                [data-argument-type="required"].argument::before {
+                    content: "{ ";
+                    color:initial;
+                    font-size: initial;
+                }
+
+            [data-argument-type="optional"].argument {
+                color: blue;
+            }
+
+                [data-argument-type="optional"].argument::after {
+                    content: " ]";
+                    color:initial;
+                    font-size: initial;
+                }
+
+                [data-argument-type="optional"].argument::before {
+                    content: "[ ";
+                    color:initial;
+                    font-size: initial;
+                }
+
+    .describtion{
+            display: block;
+        }
+
+        .describtion__statement{
+            display: block;
+        }
+
+            .statement--argument{
+                color:blue;
+            }
+
+            .statement--argument::after{
+                content: " ,";
+                color: initial;
+            }
+
+            .statement__return {
+
+            }
+
+                .statement__return::after {
+                    content: " ," ;
+                    color: initial;
+                }
+
+                .statement__return::before {
+                    content: "return " ;
+                    color: orange;
+                }
+
+            .statement__do {
+
+            }
+
+            .statement__do::before {
+                content: "do " ;
+                color: orange;
+            }
+
+            .statement__do__argument{
+                color: blue;
+            }
+
+
+
+        .describtion__error {
+            display: block;
+        }
+
+            .describtion__error--error {
+                color:red;
+            }
+
+/*##############################*/
+
+.argument1 {
+    color: blue;
     text-transform: uppercase;
-    font-size: 1.2rem;
+}
+.argument1::after {
+    content: "}";
+    color: initial;
 }
 
-/* Function Name */
-.fn {
-    padding: 0;
-    color : red;
-    font-size: 1.3rem;
-}
-
-/* Function Arguments */
-.f_arg {
-    margin:0;
-}
-
-    /* Function Arguments Optional*/
-    .f_arg--op {
-        text-transform: uppercase;
-        color : blue;
-        font-size: 1.2rem;
-    }
-    .f_arg--op::after {
-        content: " ]";
-    }
-    .f_arg--op::before {
-        content: "[ ";
-    }
-
-    /* Function Argument Required */
-    .f_arg--re {
-        text-transform: uppercase;    
-        color : blue;
-        font-size: 1.2rem;
-    }
-    .f_arg--re::after {
-        content: " }";
-    }
-    .f_arg--re::before {
-        content: "{ ";
-    }
-
-/* Function Do */
-.f_do {
-    
-}
-
-.f_do::before {
-    content: "=> ";
-}
-
-/* Function Return */
-.f_re {
-
-}
-.f_re::before {
-    content: "return ";
-    color: orange;
+.argument1::before {
+    content: "{";
+    color: initial;
 }

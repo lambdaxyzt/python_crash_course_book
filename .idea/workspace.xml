@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2504264-61ab-4e06-b6fa-359d88422ef7" name="Default Changelist" comment="" />
+    <list default="true" id="f2504264-61ab-4e06-b6fa-359d88422ef7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main-style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,9 +48,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Headfirst Javascript Book" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ajax" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lambdaxyzt\Downloads\python css" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -62,6 +71,17 @@
       <workItem from="1597959600370" duration="2706000" />
       <workItem from="1598038622108" duration="341000" />
       <workItem from="1598273778400" duration="46000" />
+      <workItem from="1598465730228" duration="176000" />
+      <workItem from="1599144002339" duration="6547000" />
+      <workItem from="1599166133182" duration="3514000" />
+      <workItem from="1599512066816" duration="320000" />
+      <workItem from="1599521967205" duration="21000" />
+      <workItem from="1599581221699" duration="2667000" />
+      <workItem from="1599592425287" duration="442000" />
+      <workItem from="1599659057936" duration="2196000" />
+      <workItem from="1599689779796" duration="29000" />
+      <workItem from="1599984920456" duration="429000" />
+      <workItem from="1599997582042" duration="41000" />
     </task>
     <servers />
   </component>
@@ -85,21 +105,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="144" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1366.728@0.0.1366.728" timestamp="1597959877509" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598273822096">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1599997621321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598273822096" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599997621321" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597959878450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597959878450" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1597852472760">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1599161783503">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597852472760" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597959885729">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599161783503" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599512099234">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597959885729" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599512099234" />
   </component>
 </project>

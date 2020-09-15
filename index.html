@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body><div class="body neooutside">
+<body><section class="body neooutside">
 
     <h1>Chapter 1</h1>
     content
@@ -215,99 +215,407 @@
         python support negative positioning starting from -1
     </span>
 
-    <div class="function">
-        <span class="funcion--argument">
-            <span class="object">list</span>.
-            <span class="fn">append</span>
-            <span class="f_arg">
-                (
-                <span class="f_arg--re" type="item">item</span>
-                )
-        </span>
-        </span>
-        <span class="funcion--describtion">
-            <span class="f_re">N</span>
-            <span class="f_do">add 
-                <span class="f_arg--re">item</span> 
-                to 
-                <span class="f_arg--re" type="integer">index number</span>
-                to end of the list
+
+    <!-- ######### list.append ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">insert</span>
+            <span class="arguments">
+                <span  data-argument-type="required"
+                       class="argument">index number</span>
+                ,
+                <span  data-argument-type="required"
+                      class="argument">object</span>
             </span>
         </span>
-        <samp class="function__example">
-
-        </samp>
-    </div>
-
-    <div class="function">
-        <span class="funcion--argument">
-            <span class="object">list</span>.
-            <span class="fn">insert</span>
-            <span class="f_arg">(
-                <span class="f_arg--re" type="integer">index number</span>,
-                <span class="f_arg--re" type="item">item</span>)
-            </span>
-        </span>
-        <span class="funcion--describtion">
-            <span class="f_re">N</span>
-            <span class="f_do">add 
-                <span class="f_arg--re">item</span> 
-                to 
-                <span class="f_arg--re" type="integer">index number</span>
-                of the list
-            </span>
-        </span>
-        <samp class="function__example">
-
-        </samp>
-    </div>
-
-    <div class="function">
-        <span class="funcion--argument">
-            <span class="object">list</span>.
-            <span class="fn">insert</span>
-            <span class="f_arg">(
-                <span class="f_arg--re" type="integer">index number</span>,
-                <span class="f_arg--re" type="item">item</span>)
-            </span>
-        </span>
-        <span class="funcion--describtion">
-            <span class="f_re">N</span>
-            <span class="f_do">add 
-                <span class="f_arg--re">item</span> 
-                to 
-                <span class="f_arg--re" type="integer">index number</span>
-                of the list
-            </span>
-        </span>
-        <samp class="function__example">
-
-        </samp>
-    </div>
-
-    <div class="function">
-        <span class="object">list</span>.
-        <span class="fn">pop</span>
-        <span class="f_arg">(
-            <span class="f_arg--op" type="integer"></span>|
-            <span class="f_arg--op" type="integer">index number</span>)
-        </span>
-        <span class="function--describtion">
-            <span class="function--describtion__">
-                <span class="f_re">item which poped</span>
-                <span class="f_do">delete last item in list and return it.</span>
-            </span>
-            <span class="function--describtion__">
-                <span class="f_re">item which poped</span>
-                <span class="f_do">delete item in 
-                    <span class="f_arg" type="integer">index number</span> 
-                    list and return it.
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement__return">nothing</span>
+                <span class="statement__do">
+                    add
+                    <span class="statement__do__argument">object</span>
+                    to the end of list
                 </span>
             </span>
-        <samp class="function__example">
-       
-        </samp>
-    </div>
+            <span class="describtion__error" data-for-id="list-append-1" >
 
-</div></body>
+            </span>
+        </span>
+    </section>
+
+
+    <!-- ######### list.pop ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">pop</span>
+            <span class="arguments" >
+                {
+                <span class="argument"> </span>
+                |
+                <span class="argument">index number</span>
+                }
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"> </span>
+                <span class="statement__return">poped item</span>
+                <span class="statement__do">
+                    delete last item in list and return it
+                </span>
+            </span>
+            <span class="describtion__statement">
+                <span class="statement--argument">index number</span>
+                <span class="statement__return">poped item</span>
+                <span class="statement__do">
+                    delete
+                    <span class="statement__do__argument" >index number</span>
+                    item in list and return it
+                </span>
+            </span>
+            <span class="describtion__error" data-for-id="list-append-1" >
+                if you enter wrong
+                <span class="statement__do__argument" >index number</span>
+                you get with
+                <span class="describtion__error--error">index Error</span>
+            </span>
+        </span>
+    </section>
+
+
+    <section>
+        <var>del</var> keyword  
+    </section>
+
+
+    <!-- ######### list.pop ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">remove</span>
+            <span class="arguments" >
+                <span  data-argument-type="required" class="argument">object</span>
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"></span>
+                <span class="statement__return">N</span>
+                <span class="statement__do">
+                    delete first
+                    <span class="statement__do__argument">object</span>
+                    that maches
+                </span>
+            </span>
+    </section>
+
+    <!-- ######### list.pop ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">remove</span>
+            <span class="arguments" >
+                <span  data-argument-type="required" class="argument">object</span>
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument">object</span>
+                <span class="statement__return">N</span>
+                <span class="statement__do">
+                    delete first
+                    <span class="statement__do__argument">object</span>
+                    that maches
+                </span>
+            </span>
+    </section>
+
+    <!-- ######### list.remove ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">sort</span>
+            <span class="arguments" >
+                <span  data-argument-type="optional" class="argument">reverse = True</span>
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"></span>
+                <span class="statement__return">N</span>
+                <span class="statement__do">
+                    sort and change list permanently
+                </span>
+            </span>
+    </section>
+
+    <!-- ######### sort ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="method">sort</span>
+            <span class="arguments" >
+                <span  data-argument-type="optional" class="argument">reverse = True</span>
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"></span>
+                <span class="statement__return">sorted list</span>
+                <span class="statement__do">
+                    sort
+                    <span class="statement__do__argument">list</span>
+                    and return sorted list but no change in actual list
+                </span>
+            </span>
+    </section>
+
+    <!-- ######### list.reverse ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="object">list</span>
+            <span class="seprator">.</span>
+            <span class="method">reverse</span>
+            <span class="arguments" >
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"></span>
+                <span class="statement__return">N</span>
+                <span class="statement__do">
+                    reverse list permanently
+                </span>
+            </span>
+    </section>
+
+    <!-- ######### list.reverse ######### -->
+    <section class="object_method">
+        <!-- Part 1 -->
+        <span class="defenition">
+            <span class="method">len</span>
+            <span class="arguments" >
+                {
+                <span class="argument">list</span>
+                |
+                <span class="argument">string</span>
+                }
+            </span>
+        </span>
+        <!-- Part 2 -->
+        <span class="describtion">
+            <span class="describtion__statement">
+                <span class="statement--argument"></span>
+                <span class="statement__return">length of the
+                    <span class="statement__do__argument">list</span>
+                    |
+                    <span class="statement__do__argument">string</span>
+                </span>
+                <span class="statement__do">
+                    N
+                </span>
+            </span>
+    </section>
+
+
+    <section>
+        IndexError
+        <code>
+            motorcycles = ['honda', 'yamaha', 'suzuki'] 
+            print(motorcycles[3])
+        </code>
+        <samp>
+            Traceback (most recent call last):
+              File "motorcycles.py", line 2, in &lt;module&gt;
+                      print(motorcycles[3]) 
+            IndexError: list index out of range 
+        </samp>
+    </section>
+
+    <section>
+        best practice :
+        check if list empty or not for using <span class="red">LIST[-1]</span>
+    </section>
+
+    <samp>
+        for <span class="argument1">variable</span> in <span class="argument1">list</span>:
+        &emsp;// do this codes
+    </samp>
+
+    <section>logical error</section>
+
+    <setion>
+        range(a,b) function generate series of number from a to b-1
+    </setion>
+
+    <section>
+        off-by-one in programming
+    </section>
+
+    <section>
+        list(range())
+        range(5,1,-1)
+        range(1,6,2)
+    </section>
+
+    <section>
+        Focus first on writing code that you understand clearly, which does what you want it to do. Then look for more efficient approaches as you review your code
+    </section>
+
+    <section><pre>
+        min(<span class="argument1">list</span>)
+        find minimum of list
+
+        max(<span class="argument1">list</span>)
+        find maximum of list
+    </pre></section>
+
+    <section>
+        list comprehension
+    </section>
+
+    <samp>
+        squares = [value**2 for value in range(1, 11)] print(squares)
+    </samp>
+
+    <section><pre>
+
+
+    </pre></section>
+
+    <samp>
+        dimensions = (200, 50) 
+        dimensions[0] = 250
+        Traceback (most recent call last):  
+          File "dimensions.py", line 2, in <module>   
+             dimensions[0] = 250 
+        TypeError: 'tuple' object does not support item assignment
+    </samp>
+
+    <section>
+        Tuples are technically defined by the presence of a comma; the parentheses make them look neater and more readable. If you want to define a tuple with one element, you need to include a trailing comma:
+    </section>
+
+    <samp>
+        my_t = (3,) 
+        my_t = 3,
+    </samp>
+
+    <section>
+        The lines starting at u define the original tuple and print the initial dimensions. At v, we associate a new tuple with the variable dimensions. We then print the new dimensions at w. Python doesn’t raise any errors this time, because reassigning a variable is valid
+
+    </section>
+
+    <section>
+        Python Enhancement Proposal (PEP).
+        <p>PEP 8</p>
+    </section>
+
+    <ul>
+        <li>indentation</li>
+        <li>line length</li>
+        <li>blank lines</li>
+    </ul>
+
+    <section>
+        Many Python programmers recommend that each line should be less than 80 characters
+    </section>
+
+    <section>
+        PEP 8 also recommends that you limit all of your comments to 
+        72 characters per line
+    </section>
+
+    <section>
+        The PEP 8 guidelines for line length are not set in stone, and some teams prefer a 99-character limit. Don’t worry too much about line length in your code as you’re learning, but be aware that people who are working collaboratively almost always follow the PEP 8 guidelines. Most editors allow you to set up a visual cue, usually a vertical line on your screen, that shows you where these limits are. 
+note 
+    </section>
+
+    <section>
+        if you have five lines of code that build a list, and then another three lines that do something with that list, it’s appropriate to place a blank line between the two sections. However, you should not place three or four blank lines between the two sections
+    </section>
+
+    <section>
+        Blank lines won’t affect how your code runs, but they will affect the readability of your code. The Python interpreter uses horizontal indentation to interpret the meaning of your code, but it disregards vertical spacing.
+    </section>
+
+    <h1>Chapter 4</h1>
+
+    <section>
+        The lower() function doesn’t change the value that was originally stored in car
+    </section>
+    
+    <section>
+        in keyword
+        <code>
+        >>> requested_toppings = ['mushrooms', 'onions', 'pineapple']     
+        >>> 'mushrooms' in requested_toppings 
+        True
+        </code>
+    </section>
+
+    <section>
+        not in keyword
+        <code>
+            >>>banned_users = ['andrew', 'carolina', 'david']
+            >>>user = 'marie'
+            >>>u if user not in banned_users:
+            True
+        </code>
+    </section>
+
+    <section>
+        boolean expression
+    </section>
+
+    <section>
+        boolean value
+    </section>
+
+    <section>
+        these you can use Python’s if-elif-else syntax. Python executes only one block in an if-elif-else chain. It runs each conditional test in order until one passes. When a test passes, the code following that test is executed and Python skips the rest of the tests. 
+    </section>
+
+    <section>
+        The else block is a catchall statement. It matches any condition that wasn’t matched by a specific if or elif test, and that can sometimes include invalid or even malicious data. 
+    </section>
+
+    <section>
+        In summary, if you want only one block of code to run, use an if-elifelse chain. If more than one block of code needs to run, use a series of independent if statements
+    </section>
+
+    <h3>Falthy and truthy statements</h3>
+   <pre>
+    if age &lt; 4:
+
+    is better than:
+    
+    if age&lt;4:
+   </pre>
+
+
+
+</div><body>
+<script src="popper.min@2.4.4.js"></script>
+<script src="tippy-bundle.umd.min@6.2.6.js"></script>
 </html>
